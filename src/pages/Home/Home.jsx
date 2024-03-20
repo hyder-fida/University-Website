@@ -1,4 +1,3 @@
-import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import ChooseSection from '../../Components/ChooseSection/ChooseSection';
@@ -31,7 +30,9 @@ const blogs = [
 ];
 
 function Home() {
+
   return (
+
     <div className='home-page'>
         <header className='h-100 min-vh-100 d-flex align-items-center text-light'>
             <div className='container d-flex flex-column align-items-center'>

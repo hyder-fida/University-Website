@@ -9,6 +9,7 @@ import About from "./pages/About/About.jsx";
 import Blog from "./pages/Blog/Blog.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import iustLogo from './utils/images/iustLogo.jpg'
+import Notifications from "./pages/Notifications/Notifications.jsx";
 
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
               <Nav.Link href="/contact" className="text-uppercase">
                 Contact
               </Nav.Link>
+              <Nav.Link href="/notifications" className="text-uppercase">
+                Notifications
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -64,6 +68,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/notifications" element={<Notifications />} />
       </Routes>
 
       <footer>
