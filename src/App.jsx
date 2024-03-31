@@ -10,6 +10,7 @@ import Blog from "./pages/Blog/Blog.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import iustLogo from './utils/images/iustLogo.jpg'
 import Notifications from "./pages/Notifications/Notifications.jsx";
+import VcProfile from "./pages/VcProfile/VcProfile.jsx";
 
 function App() {
   return (
@@ -69,6 +70,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/notifications" element={<Notifications />} />
+        <Route path="/vcprofile" element={<VcProfile />} />
+
       </Routes>
 
       <footer>

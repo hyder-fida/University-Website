@@ -5,4 +5,4 @@ const Links = () => {
   )
 }
 
-export default Links
+export default Links;
