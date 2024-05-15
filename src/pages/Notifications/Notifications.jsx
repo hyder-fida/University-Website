@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Notifications.css";
+import Tabs from '../../Components/Tabs/Tabs';
+
 
 const links = [
   {
@@ -117,11 +119,11 @@ const links = [
 const Notifications = () => {
   return (
     <div className="notifi-page ">
-      <header className="position-absolute bg-danger w-50">
+      { <header className="bg-danger p-3">
         <h3 className=" text-white">Notifications </h3>
-      </header>
+      </header> }
 
-      <div
+      {/* <div
         className="container overflow-auto py-5 flex-wrap"
         style={{ maxHeight: "60vh" }}
       >
@@ -132,7 +134,12 @@ const Notifications = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div>*/}
+      <div>  
+      <h1></h1>
+      <Tabs/>
+
+    </div>
     </div>
   );
 };
