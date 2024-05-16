@@ -89,16 +89,16 @@ function Home() {
         </div>
       </header>
 
-      <div className="container py-5">
-        <div className="row">
-          <div className="col-md-8 mb-4 mb-md-0">
-            <Notifications />
-          </div>
-          <div className="col-md-4">
-            <VcProfile />
-          </div>
+      <div className="container py-5 m-auto">
+      <div className="row">
+        <div className="col-lg-8  mb-4 mb-lg-0">
+          <Notifications />
+        </div>
+        <div className="col-lg-4">
+          <VcProfile />
         </div>
       </div>
+    </div>
 
       <div className="py-5 ">
         <ChooseSection />

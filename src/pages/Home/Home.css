@@ -13,11 +13,10 @@ header {
     background-position: center;
 }
 
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     header {
        padding-top: 100px;
-    }
+    } */
   
     
   
-}

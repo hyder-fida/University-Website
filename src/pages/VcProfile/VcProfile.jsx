@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import vcImg from "../../utils/images/vc.jpg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import './VcProfile.css';
 
 const VcProfile = () => {
@@ -106,10 +106,11 @@ const VcProfile = () => {
     ? description
     : description.slice(0, 200) + "...";
 
+
   return (
     <div className="">
       <Card className="shadow">
-        <Card.Img variant="top" src={vcImg} className="img-fluid " style={{ height: '250px', width: '350px', margin: 'auto'}}/>
+        <Card.Img variant="top" src={vcImg} className="img-fluid mt-2" style={{ height: '250px', width: '350px', margin: 'auto'}}/>
         <Card.Body className="p-md-2">
           <Card.Title className="text-center mb-4">
             Prof Shakeel Ahmed Ramshoo

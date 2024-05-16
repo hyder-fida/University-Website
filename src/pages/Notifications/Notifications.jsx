@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Notifications.css";
+import Tabs from "../../Components/Tabs/Tabs";
 
 const links = [
   {
@@ -8,107 +9,107 @@ const links = [
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 2,
     msg: "Batch 2024 Result declared here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 3,
     msg: "Apply for reevaltion",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 4,
     msg: "Check your results here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 5,
     msg: "Visit to our admissions",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 6,
     msg: "Batch 2024 Result declared here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 7,
     msg: "Apply for reevalvation",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 80,
     msg: "Check your results here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 8,
     msg: "Batch 2024 Result declared here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 9,
     msg: "Apply for reevaltion",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 10,
     msg: "Check your results here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 11,
     msg: "Visit to our admissions",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 12,
     msg: "Batch 2024 Result declared here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 13,
     msg: "Apply for reevalvation",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 14,
     msg: "Check your results here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 150,
     msg: "Batch 2024 Result declared here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 15,
     msg: "Apply for reevaltion",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 159,
     msg: "Check your results here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 16,
     msg: "Visit to our admissions",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 17,
     msg: "Batch 2024 Result declared here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 18,
     msg: "Apply for reevalvation",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
   {
-    id: 1,
+    id: 19,
     msg: "Check your results here",
     url: "https://www.geeksforgeeks.org/how-to-use-modal-component-in-reactjs/",
   },
@@ -117,11 +118,11 @@ const links = [
 const Notifications = () => {
   return (
     <div className="notifi-page ">
-      <header className="position-absolute bg-danger w-50">
+      { <header className="bg-danger p-3">
         <h3 className=" text-white">Notifications </h3>
-      </header>
+      </header> }
 
-      <div
+      {/* <div
         className="container overflow-auto py-5 flex-wrap"
         style={{ maxHeight: "60vh" }}
       >
@@ -132,7 +133,12 @@ const Notifications = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div>*/}
+      <div>  
+      <h1></h1>
+      <Tabs/>
+
+    </div>
     </div>
   );
 };
