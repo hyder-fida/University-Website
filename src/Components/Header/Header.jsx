@@ -31,7 +31,7 @@ const Header = () => {
           className="bg-light"
         />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto justify-content-end w-100">
+          <Nav className="mx-auto justify-content-end w-100 font">
             <Nav.Link as={Link} to="/" className="text-uppercase">Home</Nav.Link>
             <Nav.Link as={Link} to="/courses" className="text-uppercase">Courses</Nav.Link>
             <Nav.Link as={Link} to="/about" className="text-uppercase">About</Nav.Link>
