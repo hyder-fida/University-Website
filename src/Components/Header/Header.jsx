@@ -7,7 +7,7 @@ import iustLogo from '../../utils/images/iustLogo.jpg';
 
 const Header = () => {
   return (
-    <Navbar expand="lg" className="position-absolute w-100">
+    <Navbar expand="lg" className="position-absolute w-100 bg-body-secondary mb-5 p-0">
       <Container>
         <Navbar.Brand>
           <Link to="/" className="navbar-brand d-flex align-items-center">

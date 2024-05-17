@@ -10,6 +10,7 @@ import Blog3Img from "../../utils/images/blog3-img.jpg";
 import { useEffect, useState } from "react";
 import Notifications from "../Notifications/Notifications";
 import VcProfile from "../VcProfile/VcProfile";
+import News from "../../Components/News/News";
 
 const blogs = [
   {
@@ -49,7 +50,8 @@ function Home() {
   return (
     <div className="home-page">
       <header
-        className="h-100 min-vh-100 d-flex align-items-center text-light"
+        className=" h-100 min-vh-100 d-flex align-items-center text-light"
+
         style={{
           backgroundImage: `url(${blogs[blogsId].img})`,
           backgroundSize: "cover",
@@ -57,7 +59,7 @@ function Home() {
           backgroundPosition: "center",
         }}
       >
-        <div className="container d-flex flex-column align-items-center">
+        <div className="container d-flex flex-column align-items-center ">
           <h2>Welcome To</h2>
           <h1 className="text-center fw-semibold">
             Islamic University Of Science And Technology
@@ -160,6 +162,8 @@ function Home() {
           </Link>
         </div>
       </div>
+      <News/>
+
     </div>
   );
 }
