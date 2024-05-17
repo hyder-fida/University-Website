@@ -1,0 +1,6 @@
+.card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the area of the card without stretching */
+  }
+  

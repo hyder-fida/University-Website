@@ -3,7 +3,7 @@ import "./Tabs.css"
 import { tabData } from './tabData';
 const Tabs = () => {
 
-    const [currentTab, setCurrentTab] = useState('1');
+    const [currentTab, setCurrentTab] = useState ('1');
     
     const handleTabClick = (e) => {
         setCurrentTab(e.target.id);
