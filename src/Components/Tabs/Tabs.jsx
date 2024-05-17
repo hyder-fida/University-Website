@@ -19,7 +19,9 @@ const Tabs = () => {
             <div className='content'>
                 {tabData.map((tab, i) =>
                     <div key={i}>
-                        {currentTab === `${tab.id}` && <div><p className='title'>{tab.title}</p><p>{tab.content}</p></div>}
+                        {currentTab === `${tab.id}` && <div><p className='title'>{tab.title}</p><p>{tab.links.map((link, index) => (
+                                    <p key={index}><a href={link.url} target="_blank" rel="noopener noreferrer">{link.text}</a></p>
+                                ))}</p></div>}
                     </div>
                 )}
             </div>
