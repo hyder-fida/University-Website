@@ -4,11 +4,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import iustLogo from '../../utils/images/iustLogo.jpg';
-import "./Header.css";
 
 const Header = () => {
   return (
-    <Navbar expand="lg" className="position-absolute w-100">
+    <Navbar expand="lg" className="position-absolute w-100 bg-body-secondary mb-5">
       <Container>
         <Navbar.Brand>
           <Link to="/" className="navbar-brand d-flex align-items-center">

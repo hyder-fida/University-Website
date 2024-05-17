@@ -12,6 +12,7 @@ import Notifications from "../Notifications/Notifications";
 import VcProfile from "../VcProfile/VcProfile";
 import News from "../../Components/News/News";
 
+// to b added
 const blogs = [
   {
     id: 1,
