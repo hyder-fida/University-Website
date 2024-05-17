@@ -57,7 +57,7 @@ function Home() {
           backgroundPosition: "center",
         }}
       >
-        <div className="container d-flex flex-column align-items-center">
+        <div className=" home-container container d-flex flex-column align-items-center">
           <h2>Welcome To</h2>
           <h1 className="text-center fw-semibold">
             Islamic University Of Science And Technology
