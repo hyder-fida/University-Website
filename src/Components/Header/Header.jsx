@@ -4,15 +4,15 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import iustLogo from '../../utils/images/logo41.png';
-
+import './header.css';
 const Header = () => {
   return (
-    <Navbar expand="lg" className=" w-100   ">
+    <Navbar expand="lg" className=" w-100  nav">
       <Container>
         <Navbar.Brand>
           <Link to="/" className="navbar-brand d-flex align-items-center">
             <div>
-              <img src={iustLogo} alt="iust Logo" width="100px" height="100px" className="" />
+              <img src={iustLogo} alt="iust Logo" width="50px" height="50" className="" />
             </div>
             {/* <span className="mx-2 text-light lh-1 fw-semibold">
               Islamic
