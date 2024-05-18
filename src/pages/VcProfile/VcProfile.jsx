@@ -110,7 +110,7 @@ const VcProfile = () => {
   return (
     <div className="">
       <Card className="shado">
-        <Card.Img variant="top" src={vcImg} className="img-fluid" style={{ height: '250px'}}/>
+        <Card.Img variant="top" src={vcImg} className="img-fluid " style={{ height: '250px'}}/>
         <Card.Body className="p-md-2">
           <Card.Title className="text-center mb-4">
             Prof Shakeel Ahmed Ramshoo

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Tabs.css";
+import "./tabs.css";
 import { tabData } from "./tabData";
 const Tabs = () => {
   const [currentTab, setCurrentTab] = useState("1");
@@ -28,7 +28,7 @@ const Tabs = () => {
             {currentTab === `${tab.id}` && (
               <div>
                 <p className="title">{tab.title}</p>
-                <p>
+                <div>
                   {tab.links.map((link, index) => (
                     <p key={index}>
                       <a
@@ -40,7 +40,7 @@ const Tabs = () => {
                       </a>
                     </p>
                   ))}
-                </p>
+                </div>
               </div>
             )}
           </div>

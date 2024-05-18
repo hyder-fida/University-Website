@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import LondonLocationImg from "../../utils/images/London-location.jpg";
 import ManchesterLocationImg from "../../utils/images/Manchester-location.jpg";
 import LiverpoolLocationImg from "../../utils/images/Liverpool-location.jpg";
+import ChooseSection from "./ChooseSection";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -47,6 +48,7 @@ function Contact() {
   };
 
   return (
+     
     <div className="contact-page">
       <header className="height-75">
         <div className="container h-100 d-flex flex-column align-items-center justify-content-center text-light">
@@ -57,7 +59,10 @@ function Contact() {
             consequatur omnis, soluta consectetur ullam ipsum cum!
           </p>
         </div>
+
       </header>
+      <ChooseSection/>
+
 
       <div className="container my-5 d-flex justify-content-center">
         <Form id="contact-form" onSubmit={handleSubmit}>

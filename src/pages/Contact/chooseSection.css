@@ -1,0 +1,10 @@
+.style-none {
+    color: inherit;
+    text-decoration: none;
+  }
+  .style-none:hover,
+  .style-none:focus,
+  .style-none:active {
+    color: inherit;
+    text-decoration: none;
+  }
