@@ -4,8 +4,9 @@ import vcImg from "../../utils/images/vc.jpg";
 import { Link, useLocation } from "react-router-dom";
 import './VcProfile.css';
 
-const VcProfile = () => {
+const VcProfile = (props) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
+  const { variant, ...rest } = props;
 
   const toggleDescription = () => {
     setShowFullDescription(!showFullDescription);
@@ -108,14 +109,14 @@ const VcProfile = () => {
 
 
   return (
-    <div className="">
-      <Card className="shado">
-        <Card.Img variant="top" src={vcImg} className="img-fluid " style={{ height: '250px'}}/>
+    <div className="vc-card-container">
+      <Card className="shado  ">
+        <Card.Img  src={vcImg}  {...rest} className="img-fluid mx-auto custom-card-img" style={{ height: '300px', minWidth: '70%', margin: 'auto' ,width: '80%' ,marginTop:'20px', }}   />
         <Card.Body className="p-md-2">
           <Card.Title className="text-center mb-4">
             Prof Shakeel Ahmed Ramshoo
           </Card.Title>
-          <Card.Text className="text-justify">
+          <Card.Text className="text-justify vc-desc">
             {truncatedDescription}
             {!showFullDescription && (
               <Link to="/vcprofile">

@@ -7,7 +7,7 @@ import logoCapital from '../../utils/images/logoCapital3.png';
 import './header.css';
 const Header = () => {
   return (
-    <Navbar expand="lg" className=" w-100  nav">
+    <Navbar expand="lg" sticky="top" className=" w-100  nav">
       <Container>
         <Navbar.Brand>
           <Link to="/" className="navbar-brand d-flex align-items-center">
