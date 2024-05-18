@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import iustLogo from '../../utils/images/logo41.png';
+import logoCapital from '../../utils/images/logoCapital3.png';
 import './header.css';
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
         <Navbar.Brand>
           <Link to="/" className="navbar-brand d-flex align-items-center">
             <div>
-              <img src={iustLogo} alt="iust Logo" width="50px" height="50" className="" />
+              <img src={logoCapital} alt="iust Logo" width="250px" height="50" className="" />
             </div>
             {/* <span className="mx-2 text-light lh-1 fw-semibold">
               Islamic
@@ -38,6 +38,8 @@ const Header = () => {
             <Nav.Link as={Link} to="/blog" className="text-uppercase">Blog</Nav.Link>
             <Nav.Link as={Link} to="/contact" className="text-uppercase">Contact</Nav.Link>
             <Nav.Link as={Link} to="/notifications" className="text-uppercase">Notifications</Nav.Link>
+            <Nav.Link as={Link} to="/login" className="text-uppercase">LogIn</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

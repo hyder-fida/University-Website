@@ -6,6 +6,7 @@ import Blog from "../../pages/Blog/Blog";
 import Contact from "../../pages/Contact/Contact";
 import Notifications from "../../pages/Notifications/Notifications";
 import VcProfile from "../../pages/VcProfile/VcProfile";
+import Login from "../../pages/LoginLogout/Login";
 
 function AppRoutes() {
   return (
@@ -17,6 +18,7 @@ function AppRoutes() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/notifications" element={<Notifications />} />
       <Route path="/vcprofile" element={<VcProfile />} />
+      <Route path="/Login" element={<Login/>} />
     </Routes>
   );
 }

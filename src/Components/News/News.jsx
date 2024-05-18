@@ -1,7 +1,7 @@
 import { cards } from "./newsData";
 
 const Card = ({ imgSrc, link }) => (
-  <div className="col-3 mb-3">
+  <div className="col-3 mb-3 ">
     <div className="card ">
       <a href={link}>
         {imgSrc && (
