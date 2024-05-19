@@ -1,11 +1,14 @@
-/* .nav-container{
-    background-color: #cccccc67;
-}
-.navbar {
-    --bs-navbar-padding-x: 0;
-    --bs-navbar-padding-y: 0;
+.custom-navbar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1020; /* Ensure the navbar stays on top */
+  background-color: #ffffff; /* Set the background color to prevent transparency issues */
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
+<<<<<<< Updated upstream
 /* Header.css */
 .custom-navbar {
     padding-top: 1px;  /* Adjust this value to decrease the y-axis padding */
@@ -30,3 +33,9 @@
       }
   
   
+=======
+.custom-navbar .nav-link {
+  padding-top: 1px;  /* Adjust this value if needed */
+  padding-bottom: 5px;  /* Adjust this value if needed */
+}
+>>>>>>> Stashed changes

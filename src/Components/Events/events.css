@@ -1,0 +1,33 @@
+.events-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .events-heading {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .events-list {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .event-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .event-link:hover {
+    text-decoration: underline;
+  }
+  

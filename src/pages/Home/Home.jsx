@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import Notifications from "../Notifications/Notifications";
 import VcProfile from "../VcProfile/VcProfile";
 import News from "../../Components/News/News";
+import Events from "../../Components/Events/Events";
 
 // to b added
 const blogs = [
@@ -106,6 +107,7 @@ function Home() {
       <div className="py-5 ">
         <ChooseSection />
       </div>
+      
 
       <div className="py-5 bg-light">
         <div className="container">
@@ -164,7 +166,9 @@ function Home() {
         </div>
       </div>
       <News/>
-
+      <div>
+        <Events/>
+      </div>
     </div>
   );
 }
