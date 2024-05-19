@@ -1,4 +1,4 @@
-.events-container {
+/* .events-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -29,5 +29,65 @@
   
   .event-link:hover {
     text-decoration: underline;
+  } */
+  .events-container {
+    /* margin: 5px; */
+    /* background: rgba(255, 255, 255, 0.377);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    width: 95%; */
+    margin: auto;
+    margin-top: 20px;
+    background-color:  rgba(255, 255, 255, 0.377)
+ 
+    
+
+  }
+  .events-container h1{
+    padding-top: 20px;
+    /* color: #DC3545; */
+
   }
   
+  .events-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-column-gap: 20px; 
+    
+  }
+  
+  .left-section,
+  .right-section {
+    padding: 20px;
+  }
+  
+  .events-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .events-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-item {
+  
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Add animation transition */
+  }
+  .event-item:hover {
+    transform: translateY(-5px); /* Add animation on hover */
+  }
+  
+  .event-link {
+    color: #007bff;
+  }
+
+
+  /*  */
+ 
