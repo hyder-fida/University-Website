@@ -32,16 +32,41 @@
   } */
   .events-container {
     /* margin: 5px; */
-    /* background: rgba(255, 255, 255, 0.377);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    width: 95%; */
+    background: rgba(255, 255, 255, 0.377);
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    width: 95%;
     margin: auto;
     margin-top: 20px;
-    background-color:  rgba(255, 255, 255, 0.377)
+    background-color:  rgba(255, 255, 255, 0.377);
+    /* overflow-y: auto; 
+    max-height: 300px;
+    overflow-x: hidden; */
+  
  
     
 
   }
+  
+/* Thin scrollbar */
+.events-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Track */
+.events-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Handle */
+.events-container::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 4px; /* Rounded corners for the scrollbar handle */
+}
+
+/* Handle on hover */
+.events-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
+}
   .events-container h1{
     padding-top: 20px;
     /* color: #DC3545; */
@@ -71,7 +96,7 @@
   }
   
   .event-item {
-  
+    width: 98%;
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 10px;
