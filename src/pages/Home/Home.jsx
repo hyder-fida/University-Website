@@ -93,7 +93,7 @@ function Home() {
           </div>
         </div>
       </header>
-
+    
       <div className="container py-5 m-auto">
         <div className="row">
           <div className="col-lg-8  mb-4 mb-lg-0">
@@ -155,9 +155,8 @@ function Home() {
 
       <div className="blog-section text-light py-5">
         <div className="container d-flex flex-column align-items-center">
-          <h2 className="text-center text-capitalize mb-5">
-            Latest on the blog
-          </h2>
+          <h2 className="text-center text-capitalize mb-5 text-dark">
+            Latest on the blogg </h2>
           <div className="row g-4">
             {blogs.map((blog) => (
               <div key={blog.id} className="col-md-6 col-lg-4">
