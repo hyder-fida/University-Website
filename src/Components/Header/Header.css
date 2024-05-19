@@ -1,4 +1,22 @@
+/* .nav-container{
+    background-color: #cccccc67;
+}
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0;
+}
+
+/* Header.css */
 .custom-navbar {
+  padding-top: 1px;  /* Adjust this value to decrease the y-axis padding */
+  padding-bottom: 5px;  /* Adjust this value to decrease the y-axis padding */
+}
+
+.custom-nav-link {
+  padding-top: 1px;  /* Adjust this value if needed */
+  padding-bottom: 5px;  /* Adjust this value if needed */
+}
+.nav {
   position: -webkit-sticky; /* For Safari */
   position: sticky;
   top: 0;
@@ -8,6 +26,7 @@
   padding-bottom: 5px;
 }
 
+<<<<<<< HEAD
 /* Header.css */
 .custom-navbar {
     padding-top: 1px;  /* Adjust this value to decrease the y-axis padding */
@@ -32,3 +51,8 @@
       }
   
   
+=======
+.navbar{
+  position : sticky
+      }
+>>>>>>> 564746c68aba6a9269f9a9f9cc8c6fe186ca07bb
