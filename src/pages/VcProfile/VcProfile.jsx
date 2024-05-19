@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import vcImg from "../../utils/images/vc.jpg";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './VcProfile.css';
 
 const VcProfile = (props) => {

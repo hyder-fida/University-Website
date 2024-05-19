@@ -1,5 +1,6 @@
-import "./Home.css";
+import "./home.css";
 import "./card.css";
+import "./home.css";
 import { Link } from "react-router-dom";
 import ChooseSection from "../../Components/ChooseSection/ChooseSection";
 import StartCoursesImg from "../../utils/images/start-courses-img.jpg";
@@ -10,11 +11,9 @@ import Blog2Img from "../../utils/images/blog2-img.jpg";
 import Blog3Img from "../../utils/images/blog3-img.jpg";
 import { useEffect, useState } from "react";
 import Notifications from "../Notifications/Notifications";
-import VcProfile from "../VcProfile/VcProfile";
 import News from "../../Components/News/News";
 import Events from "../../Components/Events/Events";
 import vcImg from "../../utils/images/vc.jpg";
-
 
 // to b added
 const blogs = [
@@ -41,7 +40,7 @@ const blogs = [
   },
 ];
 
-function Home( { imageUrl, title, description }) {
+function Home() {
   const [blogsId, setBlogsId] = useState(0);
 
   useEffect(() => {
@@ -56,7 +55,6 @@ function Home( { imageUrl, title, description }) {
     <div className="home-page">
       <header
         className=" h-100 min-vh-100 d-flex align-items-center text-light"
-
         style={{
           backgroundImage: `url(${blogs[blogsId].img})`,
           backgroundSize: "cover",
@@ -97,33 +95,34 @@ function Home( { imageUrl, title, description }) {
       </header>
 
       <div className="container py-5 m-auto">
-      <div className="row">
-        <div className="col-lg-8  mb-4 mb-lg-0">
-          <Notifications />
+        <div className="row">
+          <div className="col-lg-8  mb-4 mb-lg-0">
+            <Notifications />
+          </div>
+          <div className="col-lg-4">
+            {/* <VcProfile /> */}
+            <div className="manual-card">
+              <img src={vcImg} alt="Card" className="card-image" />
+              <div className="card-content">
+                <h2 className="card-title text-center mb-4">Prof Shakeel Ahmed Ramshoo</h2>
+                <p className="card-description">
+                  I am delighted to welcome you to Islamic University of Science
+                  and Technology (IUST)...
+                </p>
+                <a href="/vcprofile" className="card-button">
+                  Read more
+                </a>
+              </div>
+            </div>
+
+            {/* end */}
+          </div>
         </div>
-        <div className="col-lg-4">
-          {/* <VcProfile /> */}
-          <div className="manual-card">
-      <img src={vcImg} alt="Card" className="card-image" />
-      <div className="card-content">
-        <h2 className="card-title">Prof Shakeel Ahmed Ramshoo</h2>
-        <p className="card-description">I am delighted to welcome you to Islamic University of Science and
-            Technology (IUST)</p>
-        <a href="/vcprofile" className="card-button">Read more</a>
       </div>
-    </div>
-
-
-
-          {/* end */}
-        </div>
-      </div>
-    </div>
 
       <div className="py-5 ">
         <ChooseSection />
       </div>
-      
 
       <div className="py-5 bg-light">
         <div className="container">
@@ -181,9 +180,9 @@ function Home( { imageUrl, title, description }) {
           </Link>
         </div>
       </div>
-      <News/>
+      <News />
       <div>
-        <Events/>
+        <Events />
       </div>
     </div>
   );
