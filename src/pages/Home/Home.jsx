@@ -1,4 +1,5 @@
 import "./Home.css";
+import "./card.css";
 import { Link } from "react-router-dom";
 import ChooseSection from "../../Components/ChooseSection/ChooseSection";
 import StartCoursesImg from "../../utils/images/start-courses-img.jpg";
@@ -12,6 +13,8 @@ import Notifications from "../Notifications/Notifications";
 import VcProfile from "../VcProfile/VcProfile";
 import News from "../../Components/News/News";
 import Events from "../../Components/Events/Events";
+import vcImg from "../../utils/images/vc.jpg";
+
 
 // to b added
 const blogs = [
@@ -38,7 +41,7 @@ const blogs = [
   },
 ];
 
-function Home() {
+function Home( { imageUrl, title, description }) {
   const [blogsId, setBlogsId] = useState(0);
 
   useEffect(() => {
@@ -99,7 +102,20 @@ function Home() {
           <Notifications />
         </div>
         <div className="col-lg-4">
-          <VcProfile />
+          {/* <VcProfile /> */}
+          <div className="manual-card">
+      <img src={vcImg} alt="Card" className="card-image" />
+      <div className="card-content">
+        <h2 className="card-title">Prof Shakeel Ahmed Ramshoo</h2>
+        <p className="card-description">I am delighted to welcome you to Islamic University of Science and
+            Technology (IUST)</p>
+        <a href="/vcprofile" className="card-button">Read more</a>
+      </div>
+    </div>
+
+
+
+          {/* end */}
         </div>
       </div>
     </div>

@@ -8,7 +8,6 @@
   padding-bottom: 5px;
 }
 
-<<<<<<< Updated upstream
 /* Header.css */
 .custom-navbar {
     padding-top: 1px;  /* Adjust this value to decrease the y-axis padding */
@@ -33,9 +32,3 @@
       }
   
   
-=======
-.custom-navbar .nav-link {
-  padding-top: 1px;  /* Adjust this value if needed */
-  padding-bottom: 5px;  /* Adjust this value if needed */
-}
->>>>>>> Stashed changes
