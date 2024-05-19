@@ -111,7 +111,7 @@ const VcProfile = (props) => {
   return (
     <div className="vc-card-container">
       <Card className="shado  ">
-        <Card.Img  src={vcImg}  {...rest} className="img-fluid mx-auto custom-card-img" style={{ height: '300px', minWidth: '40%', margin: 'auto' ,width: '4gi0%' ,marginTop:'20px', }}   />
+        <Card.Img  src={vcImg}  {...rest} className="img-fluid mx-auto custom-card-img" style={{ height: '300px', minWidth: '40%', margin: 'auto' ,width: '40%' ,marginTop:'20px', }}   />
         <Card.Body className="p-md-2">
           <Card.Title className="text-center mb-4">
             Prof Shakeel Ahmed Ramshoo
