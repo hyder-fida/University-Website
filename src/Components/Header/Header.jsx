@@ -1,50 +1,47 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import logoCapital from '../../utils/images/logoCapital3.png';
+import React, { useState } from 'react';
 import './header.css';
-const Header = () => {
-  return (
-    <Navbar expand="lg" sticky="top" className=" w-100  nav">
-      <Container>
-        <Navbar.Brand>
-          <Link to="/" className="navbar-brand d-flex align-items-center">
-            <div>
-              <img src={logoCapital} alt="iust Logo" width="250px" height="50" className="" />
-            </div>
-            {/* <span className="mx-2 text-light lh-1 fw-semibold">
-              Islamic
-              <br></br>
-              University
-              <br></br>
-              Of Science
-              <br></br>
-              And Technology
-              <br></br>
-            </span> */}
-          </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="basic-navbar-nav"
-          className="bg-light"
-        />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto justify-content-end w-100 font">
-            <Nav.Link as={Link} to="/" className="text-uppercase">Home</Nav.Link>
-            <Nav.Link as={Link} to="/courses" className="text-uppercase">Courses</Nav.Link>
-            <Nav.Link as={Link} to="/about" className="text-uppercase">About</Nav.Link>
-            <Nav.Link as={Link} to="/blog" className="text-uppercase">Blog</Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="text-uppercase">Contact</Nav.Link>
-            <Nav.Link as={Link} to="/notifications" className="text-uppercase">Notifications</Nav.Link>
-            <Nav.Link as={Link} to="/login" className="text-uppercase">LogIn</Nav.Link>
 
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+const Header = () => {
+  const [showCoursesSubMenu, setShowCoursesSubMenu] = useState(false);
+  const [showMcaSubMenu, setShowMcaSubMenu] = useState(false);
+
+  return (
+    <nav className="navbar-container">
+      <div className="navbar-logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <div className="navbar-links">
+        <div className="nav-item">Home</div>
+        <div className="nav-item">About</div>
+        <div className="nav-item">Contact</div>
+        <div 
+          className="nav-item"
+          onMouseEnter={() => setShowCoursesSubMenu(true)}
+          onMouseLeave={() => setShowCoursesSubMenu(false)}
+        >
+          Courses
+          {showCoursesSubMenu && (
+            <div className="submenu">
+              <div 
+                className="submenu-item"
+                onMouseEnter={() => setShowMcaSubMenu(true)}
+                onMouseLeave={() => setShowMcaSubMenu(false)}
+              >
+                MCA
+                {showMcaSubMenu && (
+                  <div className="submenu">
+                    <div className="submenu-item">1 Year</div>
+                    <div className="submenu-item">2 Year</div>
+                  </div>
+                )}
+              </div>
+              <div className="submenu-item">MBA</div>
+            </div>
+          )}
+        </div>
+      </div>
+    </nav>
   );
 };
 
-export default Header;
+export default Header;
