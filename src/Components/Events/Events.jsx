@@ -26,16 +26,16 @@ const Events = () => {
           <Col sm={3}>
             <Nav variant="pills" className="flex-column">
               <Nav.Item>
-                <Nav.Link eventKey="first"> Events Held >></Nav.Link>
+                <Nav.Link eventKey="first"> Events Held </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="second">Upcoming Events >></Nav.Link>
+                <Nav.Link eventKey="second">Upcoming Events </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="third">Workshops >></Nav.Link>
+                <Nav.Link eventKey="third">Workshops </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="four">Seminars >></Nav.Link>
+                <Nav.Link eventKey="four">Seminars  </Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
