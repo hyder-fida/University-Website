@@ -52,7 +52,10 @@ function Home() {
   }, []); // This effect runs only once when the component mounts
 
   return (
+
     <div className="home-page">
+         
+
       <header
         className=" h-100 min-vh-100 d-flex align-items-center text-light"
         style={{
