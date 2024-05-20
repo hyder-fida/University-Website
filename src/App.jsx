@@ -6,7 +6,7 @@ import Footer from "./Components/Footer/Footer.jsx";
 function App() {
   return (
     <div>
-      <Header />
+      <Header/>
       <AppRoutes />
       <Footer />
     </div>
