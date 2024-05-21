@@ -52,10 +52,7 @@ function Home() {
   }, []); // This effect runs only once when the component mounts
 
   return (
-
     <div className="home-page">
-         
-
       <header
         className=" h-100 min-vh-100 d-flex align-items-center text-light"
         style={{
@@ -96,7 +93,7 @@ function Home() {
           </div>
         </div>
       </header>
-    
+
       <div className="container py-5 m-auto">
         <div className="row">
           <div className="col-lg-8  mb-4 mb-lg-0">
@@ -107,7 +104,9 @@ function Home() {
             <div className="manual-card">
               <img src={vcImg} alt="Card" className="card-image" />
               <div className="card-content">
-                <h2 className="card-title text-center mb-4">Prof Shakeel Ahmed Ramshoo</h2>
+                <h2 className="card-title text-center mb-4">
+                  Prof Shakeel Ahmed Ramshoo
+                </h2>
                 <p className="card-description">
                   I am delighted to welcome you to Islamic University of Science
                   and Technology (IUST)...
@@ -159,7 +158,8 @@ function Home() {
       <div className="blog-section text-light py-5">
         <div className="container d-flex flex-column align-items-center">
           <h2 className="text-center text-capitalize mb-5 text-dark">
-            Latest on the blogg </h2>
+            Latest on the blogg{" "}
+          </h2>
           <div className="row g-4">
             {blogs.map((blog) => (
               <div key={blog.id} className="col-md-6 col-lg-4">

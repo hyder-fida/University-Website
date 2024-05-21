@@ -12,7 +12,7 @@ nav {
   position: fixed;
   z-index: 99;
   width: 100%;
-  background: #242526;
+  background: #fff;
 }
 
 nav .wrapper {
@@ -43,7 +43,7 @@ nav .wrapper {
 }
 
 .nav-links li a {
-  color: #f2f2f2;
+  color: #161313;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -62,7 +62,7 @@ nav .wrapper {
 
 .nav-links .drop-menu {
   position: absolute;
-  background: #242526;
+  background: #fff;
   width: 180px;
   line-height: 45px;
   top: 85px;

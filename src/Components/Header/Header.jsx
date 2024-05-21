@@ -1,70 +1,122 @@
-import React from 'react';
-import './header.css';
+import React, { useState } from "react";
+import "./header.css";
+import { Link } from "react-router-dom";
+import logoCapital3 from "../../utils/images/logoCapital3.png";
+
+
+const megaMenuSections = [
+  {
+    header: "Get Started",
+    links: ["OVERVIEW", "WHY IUST?", "SCHOLARSHIP", "EDUCATIONAL LOAN"],
+  },
+  {
+    header: "ADMISSIONS",
+    links: ["OVERVIEW", "WHY IUST?", "SCHOLARSHIP", "EDUCATIONAL LOAN"],
+  },
+  {
+    header: "RESEARCH",
+    links: ["OVERVIEW", "WHY IUST?", "SCHOLARSHIP", "EDUCATIONAL LOAN"],
+  },
+  {
+    header: "ACADEMICS",
+    links: [
+      "Graphics",
+      "Business Cards",
+      "Custom Logo",
+      "Graphics",
+      "Business Cards",
+      "Custom Logo",
+    ],
+  },
+  {
+    header: "RESIDENTIAL FACILITIES",
+    links: ["TRANSPORT FACILITIES", "FLATS", "HOSTEL"],
+  },
+];
+
+const MegaMenuSection = ({ header, links }) => (
+  <div className="row">
+    <header>{header}</header>
+    <ul className="mega-links">
+      {links.map((link, index) => (
+        <li key={index}>
+          <Link to="#">{link}</Link>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <nav>
       <div className="wrapper">
-        <div className="logo"><a href="#">Coding</a></div>
-        <input type="radio" name="slider" id="menu-btn" />
-        <input type="radio" name="slider" id="close-btn" />
-        <ul className="nav-links">
-          <label htmlFor="close-btn" className="btn close-btn"><i className="fas fa-times"></i></label>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+        <div className="logo ">
+          {/* <Link to="#">
+             {logoCapital3}
+          </Link> */}
+        </div>
+        <div className="menu-btn" onClick={toggleMenu}>
+          <i className="fas fa-bars"></i>
+        </div>
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <div className="close-btn" onClick={toggleMenu}>
+            <i className="fas fa-times"></i>
+          </div>
           <li>
-            <a href="#" className="desktop-item">Dropdown Menu</a>
-            <input type="checkbox" id="showDrop" />
-            <label htmlFor="showDrop" className="mobile-item">Dropdown Menu</label>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="courses">Our Courses</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
+
+          <li>
+            <Link to="login" className="desktop-item">
+              LOGIN
+            </Link>
             <ul className="drop-menu">
-              <li><a href="#">Drop menu 1</a></li>
-              <li><a href="#">Drop menu 2</a></li>
-              <li><a href="#">Drop menu 3</a></li>
-              <li><a href="#">Drop menu 4</a></li>
+              <a href="https://studentservice.iust.ac.in/Account/login">
+               
+                Student
+              </a>
+              <a href="https://ums.iust.ac.in/login.aspx"> Employee</a>
             </ul>
           </li>
           <li>
-            <a href="#" className="desktop-item">Mega Menu</a>
+            <Link to="#" className="desktop-item">
+              Mega Menu
+            </Link>
             <input type="checkbox" id="showMega" />
-            <label htmlFor="showMega" className="mobile-item">Mega Menu</label>
+            <label htmlFor="showMega" className="mobile-item">
+              Mega Menu
+            </label>
             <div className="mega-box">
               <div className="content">
-                <div className="row">
-                  <img src="img.jpg" alt="" />
-                </div>
-                <div className="row">
-                  <header>Design Services</header>
-                  <ul className="mega-links">
-                    <li><a href="#">Graphics</a></li>
-                    <li><a href="#">BusinessLards</a></li>
-                    <li><a href="#">CustomLogo</a></li>
-                  </ul>
-                </div>
-                <div className="row">
-                  <header>Email Services</header>
-                  <ul className="mega-links">
-                    <li><a href="#">PersonalEmail</a></li>
-                    <li><a href="#">BusinessEmail</a></li>
-                    <li><a href="#">WebMarketing</a></li>
-                  </ul>
-                </div>
-                <div className="row">
-                  <header>Security services</header>
-                  <ul className="mega-links">
-                    <li><a href="#">Site Seal</a></li>
-                    <li><a href="#">PrivacySeal</a></li>
-                    <li><a href="#">WebsiteDesign</a></li>
-                  </ul>
-                </div>
+                {megaMenuSections.map((section, index) => (
+                  <MegaMenuSection key={index} {...section} />
+                ))}
               </div>
             </div>
           </li>
-          <li><a href="#">Feedback</a></li>
+          <li>
+            <Link to="/notifications">Notifications</Link>
+          </li>
         </ul>
-        <label htmlFor="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
       </div>
     </nav>
   );
-}
+};
 
 export default Header;
