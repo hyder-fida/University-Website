@@ -40,9 +40,11 @@ const ourCoursesSections = [
   },
   {
     header: "Courses",
-    links: ["Master of Studies (MSt)","Master of Science (MSc)"],
+    links: ["Master of Studies ","(MSt),Master of Science (MSc)"],
   },
- 
+  // {
+  //   links: ["Master of Science (MSc)"],
+  // },
 ];
 
 const MegaMenuSection = ({ header, links }) => (
@@ -101,10 +103,7 @@ const Header = () => {
           </li>
           <li>
             <Link className="desktop-item">Our Courses</Link>
-            <input type="checkbox" id="showMegaCourses" />
-            <label htmlFor="showMegaCourses" className="mobile-item">
-              Our Courses
-            </label>
+           
             <div className="mega-box">
               <div className="content">
                 {ourCoursesSections.map((section, index) => (
@@ -129,10 +128,8 @@ const Header = () => {
             <Link to="#" className="desktop-item">
               Mega Menu
             </Link>
-            <input type="checkbox" id="showMega" />
-            <label htmlFor="showMega" className="mobile-item">
-              Mega Menu
-            </label>
+          
+          
             <div className="mega-box">
               <div className="content">
                 {megaMenuSections.map((section, index) => (
