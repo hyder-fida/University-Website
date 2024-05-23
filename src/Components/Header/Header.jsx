@@ -3,6 +3,7 @@ import "./header.css";
 import { Link } from "react-router-dom";
 import logoCapital3 from "../../utils/images/logoCapital3.png";
 
+
 const megaMenuSections = [
   {
     header: "Get Started",
@@ -33,32 +34,7 @@ const megaMenuSections = [
   },
 ];
 
-const ourCoursesSections = [
-  {
-    header: "Get Started",
-    links: ["Introducing our courses"],
-  },
-  {
-    header: "Courses",
-    links: ["Master of Studies (MSt)","Master of Science (MSc)"],
-  },
- 
-];
-
 const MegaMenuSection = ({ header, links }) => (
-  <div className="row">
-    <header>{header}</header>
-    <ul className="mega-links">
-      {links.map((link, index) => (
-        <li key={index}>
-          <Link to="#">{link}</Link>
-        </li>
-      ))}
-    </ul>
-  </div>
-);
-
-const CoursesMenuSection = ({ header, links }) => (
   <div className="row">
     <header>{header}</header>
     <ul className="mega-links">
@@ -100,29 +76,22 @@ const Header = () => {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link className="desktop-item">Our Courses</Link>
-            <input type="checkbox" id="showMegaCourses" />
-            <label htmlFor="showMegaCourses" className="mobile-item">
-              Our Courses
-            </label>
-            <div className="mega-box">
-              <div className="content">
-                {ourCoursesSections.map((section, index) => (
-                  <CoursesMenuSection key={index} {...section} />
-                ))}
-              </div>
-            </div>
+            <Link to="courses">Our Courses</Link>
           </li>
           <li>
             <Link to="/blog">Blog</Link>
           </li>
+
           <li>
             <Link to="login" className="desktop-item">
               LOGIN
             </Link>
             <ul className="drop-menu">
-              <li><a href="https://studentservice.iust.ac.in/Account/login">Student</a></li>
-              <li><a href="https://ums.iust.ac.in/login.aspx">Employee</a></li>
+              <a href="https://studentservice.iust.ac.in/Account/login">
+               
+                Student
+              </a>
+              <a href="https://ums.iust.ac.in/login.aspx"> Employee</a>
             </ul>
           </li>
           <li>

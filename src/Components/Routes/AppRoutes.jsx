@@ -7,6 +7,7 @@ import Contact from "../../pages/Contact/Contact";
 import Notifications from "../../pages/Notifications/Notifications";
 import VcProfile from "../../pages/VcProfile/VcProfile";
 import Login from "../../pages/LoginLogout/Login";
+import EmpSec from "../EmployementSection/EmpSec";
 
 function AppRoutes() {
   return (
@@ -19,6 +20,8 @@ function AppRoutes() {
       <Route path="/notifications" element={<Notifications />} />
       <Route path="/vcprofile" element={<VcProfile />} />
       <Route path="/Login" element={<Login/>} />
+      <Route path="/emp" element={<EmpSec/>} />
+
     </Routes>
   );
 }
