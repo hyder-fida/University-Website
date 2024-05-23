@@ -34,6 +34,20 @@ const megaMenuSections = [
   },
 ];
 
+const ourCoursesSections = [
+  {git
+    header: "Get Started",
+    links: ["Introducing our courses"],
+  },
+  {
+    header: "Courses",
+    links: ["Master of Studies ","(MSt),Master of Science (MSc)"],
+  },
+  // {
+  //   links: ["Master of Science (MSc)"],
+  // },
+];
+
 const MegaMenuSection = ({ header, links }) => (
   <div className="row">
     <header>{header}</header>
@@ -76,7 +90,15 @@ const Header = () => {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="courses">Our Courses</Link>
+            <Link className="desktop-item">Our Courses</Link>
+           
+            <div className="mega-box">
+              <div className="content">
+                {ourCoursesSections.map((section, index) => (
+                  <CoursesMenuSection key={index} {...section} />
+                ))}
+              </div>
+            </div>
           </li>
           <li>
             <Link to="/blog">Blog</Link>
@@ -98,10 +120,8 @@ const Header = () => {
             <Link to="#" className="desktop-item">
               Mega Menu
             </Link>
-            <input type="checkbox" id="showMega" />
-            <label htmlFor="showMega" className="mobile-item">
-              Mega Menu
-            </label>
+          
+          
             <div className="mega-box">
               <div className="content">
                 {megaMenuSections.map((section, index) => (
