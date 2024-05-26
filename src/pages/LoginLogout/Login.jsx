@@ -1,68 +1,39 @@
-
 const Login = () => {
   return (
-    <div className="p-5 text-center bg-body-secondary" style={{ height: '75vh', maxWidth: '60%', margin: '0 auto' }}>
-    <h2>Welcome To</h2>
-          <h1 className="text-center fw-semibold">
-            Islamic University Of Science And Technology
-          </h1>
-    <div className="mt-4">
-    <a href="https://studentservice.iust.ac.in/Account/login" className="mb-2 mx-4">
-      <button type="button" className="btn btn-outline-danger btn-lg mb-5 mb-md-4">
-        Login as Student
-      </button>
-    </a>
-    <a href="https://ums.iust.ac.in/login.aspx" className="mb-3">
-      <button type="button" className="btn btn-outline-danger btn-lg mb-5 mb-md-4">
-        Login as Employee
-      </button>
-    </a>
+    <div
+      className="p-5 text-center bg-body-secondary"
+      style={{ height: "75vh", maxWidth: "60%", margin: "0 auto" }}
+    >
+      <h2>Welcome To</h2>
+      <h1 className="text-center fw-semibold">
+        Islamic University Of Science And Technology
+      </h1>
+      <div className="mt-4">
+        <a
+          href="https://studentservice.iust.ac.in/Account/login"
+          className="mb-2 mx-4"
+        >
+          <button
+            type="button"
+            className="btn btn-outline-danger btn-lg mb-5 mb-md-4"
+          >
+            Login as Student
+          </button>
+        </a>
+        <a href="https://ums.iust.ac.in/login.aspx" className="mb-3">
+          <button
+            type="button"
+            className="btn btn-outline-danger btn-lg mb-5 mb-md-4"
+          >
+            Login as Employee
+          </button>
+        </a>
+      </div>
     </div>
-  </div>
-  
-  
-  )
-}
+  );
+};
 
 export default Login;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React, { useState } from "react";
 // import { Container, Form, Button, Col, Row, Modal } from "react-bootstrap";
@@ -77,7 +48,7 @@ export default Login;
 //     // Handle form submission logic here
 //     console.log("Registration Number:", registrationNumber);
 //     console.log("Password:", password);
-    
+
 //     // Show the modal on successful login
 //     setShowModal(true);
 //   };

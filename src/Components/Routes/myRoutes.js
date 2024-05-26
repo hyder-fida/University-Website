@@ -11,10 +11,13 @@ const VcProfile = lazy(() => import('../../pages/VcProfile/VcProfile'));
 const Login = lazy(() => import('../../pages/LoginLogout/Login'));
 const EmpSec = lazy(() => import('../EmployementSection/EmpSec'));
 const ErrorPage = lazy(() => import('../../pages/ErrorPage/ErrorPage.jsx'));
+const AdminPage = lazy(() => import('../../Backend/pages/AdminPage.jsx'))
+const AdminLoginPage = lazy(() => import('../../Backend/pages/LoginPage.jsx'))
 
 
 
 export const myRoutes = [
+  
   { path: '/', component: Home },
   { path: '/courses', component: Courses },
   { path: '/about', component: About },
@@ -24,6 +27,8 @@ export const myRoutes = [
   { path: '/vcprofile', component: VcProfile },
   { path: '/login', component: Login },
   { path: '/emp', component: EmpSec },
+  { path: '/loginPage', component: AdminLoginPage },
+  { path: '/admin', component: AdminPage },
   { path: '*', component: ErrorPage },
   
 ];
