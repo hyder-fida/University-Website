@@ -4,6 +4,13 @@
   position: relative;
 }
 
+.Nav-Link:hover{
+  transition: ease-in-out;
+  font-weight: 600;
+  color: #007bff;
+
+
+}
 .courses-dropdown, .about-dropdown, .login-dropdown {
   position: absolute;
   top: 100%; /* Position right below the nav item */
@@ -37,4 +44,33 @@
 .login-btn {
   margin: 5px 0;
   width: 100px;
+}
+.course-card {
+  /* Your custom styles for the card */
+  background-color: #f8f9fa; /* Example custom background color */
+  border: 2px solid #007bff; /* Example custom border */
+
+}
+
+.course-card .card-body {
+  /* Custom styles for the card body */
+  padding: 10px;
+  
+}
+.course-card .card-body:hover{
+  cursor: pointer;
+  background-color: #007bff26;
+}
+
+.course-card .card-title {
+  /* Custom styles for the card title */
+  font-size: 12px !important;
+  font-weight: 500;
+
+}
+
+.course-card .card-text {
+  /* Custom styles for the card text */
+  font-size: 12px !important;
+  color: #212427;
 }

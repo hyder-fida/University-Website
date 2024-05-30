@@ -55,16 +55,34 @@ const Header = () => {
                 <div className="courses-dropdown">
                   <Card className="course-card">
                     <Card.Body>
-                      <Card.Title>Master of Studies (MSt)</Card.Title>
-                      <Card.Text>A comprehensive program focusing on interdisciplinary studies.</Card.Text>
+                      <Card.Title >Master of Studies (MSt)</Card.Title>
+                      {/* <Card.Text>A comprehensive program focusing on interdisciplinary studies.</Card.Text> */}
                     </Card.Body>
                   </Card>
                   <Card className="course-card">
                     <Card.Body>
                       <Card.Title>Master of Science (MSc)</Card.Title>
-                      <Card.Text>An advanced program with a focus on scientific research and practical applications.</Card.Text>
+                      {/* <Card.Text>An advanced program with a focus on scientific research and practical applications.</Card.Text> */}
                     </Card.Body>
                   </Card>
+                  <Card className="course-card">
+                    <Card.Body>
+                      <Card.Title>Spiritual Studies</Card.Title>
+                      {/* <Card.Text>An advanced program with a focus on scientific research and practical applications.</Card.Text> */}
+                    </Card.Body>
+                  </Card>
+                  <Card className="course-card">
+                    <Card.Body>
+                      <Card.Title>Economics</Card.Title>
+                      {/* <Card.Text>An advanced program with a focus on scientific research and practical applications.</Card.Text> */}
+                    </Card.Body>
+                  </Card>
+                  <var> <Card className="course-card">
+                    <Card.Body>
+                      <Card.Title>Mathematics</Card.Title>
+                      {/* <Card.Text>An advanced program with a focus on scientific research and practical applications.</Card.Text> */}
+                    </Card.Body>
+                  </Card></var>
                 </div>
               )}
             </Nav.Item>
